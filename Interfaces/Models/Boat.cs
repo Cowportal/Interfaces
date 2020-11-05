@@ -6,25 +6,24 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Models
 {
-    class Car : Automobile
+    class Boat : Automobile
     {
-        public Car()
+        public Boat()
         {
 
         }
-        public Car (bool IsOn)
+        public Boat(bool IsOn)
         {
             this.IsOn = IsOn;
         }
-
         public override void SteerLeft()
         {
-            Console.WriteLine("The car is steering left");
+            throw new NotImplementedException();
         }
 
-        public void Break()
+        public void Reverse()
         {
-            Console.WriteLine("The car is breaking");
+            Console.WriteLine("The boat is reversing");
         }
     }
 }
